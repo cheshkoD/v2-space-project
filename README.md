@@ -1,2 +1,2 @@
-# space-project-v2
-xby xjgf gbcz gjgf
+# space-project
+https://cheshkod.github.io/v2-space-project/
