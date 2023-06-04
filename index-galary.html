@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключаем CSS слайдера -->
+    <link rel="stylesheet" href="/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.css">
+    <!-- Подключаем JS слайдера -->
+    <script defer src="/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.js"></script>
+    
+    <title>CHESHKO&BODNYA</title>
+</head>
+<body>
+
+<div id="english-content">
+  <!-- Английский контент -->
+
+<!--  -- HEADER --  -->
+<div class='header'>
+    <div class='container'>
+        <div class='header-line'>
+
+            <a href="index.html">
+                <div class='header-logo'>
+                    <img src="logo.png" alt="">
+                </div>
+            </a>
+
+            <div class='nav'> 
+                
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a class='nav-item' href="index.html">HOME</a>
+                    </button>    
+                </div>
+
+                <a class='nav-item' href="index-galary.html">GALERY</a>
+                <a class='nav-item' href="index-about.html">ABOUT US</a>
+                <a class='nav-item' href="index-achievements.html">ACHIEVEMENTS</a>
+            </div>
+            
+            <div class='cart'>
+            </div>
+
+            <div class='phone'>
+                <div class='phone-holder'>
+                    <div class='number'><a class='num' href='#'>+380-111-11-11</a></div>
+                    
+                </div>
+
+                <div class='phone-text'>
+                    contact us 
+                </div>
+
+                <div class="">
+                    <div class="">
+                    </div>
+            </div>
+
+        </div>
+
+            <div class="language-button">
+                <button id="language-toggle-rus" onclick="showRussianContent()">RUS</button>
+                <button id="language-toggle-eng" onclick="showEnglishContent()">ENG</button>
+            </div>
+
+            <div class='burger-menu'>
+
+                <button id='burger' onclick="toggleMenu()">
+                    <img src="burger-img.png" alt="">
+                </button>
+
+                <div id='menu' class='burger-slide disp'>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a class='nav-item' href="index.html">HOME</a>
+                        </button>
+                      </div>
+
+                    <li><a class='nav-item' href="index-galary.html">GALERY</a></li>
+                    <li><a class='nav-item' href="index-about.html">ABOUT US</a></li>
+                    <li><a class='nav-item' href="index-achievements.html">ACHIEVEMENTS</a></li>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<div class='galery'>
+
+    <div class='container'>
+
+        <div class='galery-title'>
+            <p id="gallery-text-en"> GALERY <span>GALERY</span> GALERY<span> GALERY</span> GALERY</p>
+        </div>
+
+        <div class='galery-content'>
+
+            <div class='galery-left'>
+
+                <div class='galery-up'>
+                    <img class='img-gal high' src="space-10.jpg">
+                </div>
+
+                <div class='galery-down'>
+                    <img class='img-gal' src="space-20.jpg">
+                    <img class='img-gal' src="space-30.jpg">
+                </div>
+
+            </div>
+
+            <div class='galery-right'>
+
+                 <div class='galery-up'>
+                    <img class='img-gal' src="space-40.jpg">
+                    <img class='img-gal' src="space-30.jpg">
+                </div>
+
+                <div class='galery-down'>
+                    <img class='img-gal high' src="space-50.jpg">
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="adaptivn-slayder">
+            <div class="parag">
+                <img src="https://thehill.com/wp-content/uploads/sites/2/2022/08/CA_space_08032022istock.jpg" alt="Первый слайд">
+                <div class="beksun-slayda">View from Space</div>
+            </div>
+          
+            <div class="parag">
+                <img src="https://cdn.wccftech.com/wp-content/uploads/2016/09/spacee.jpg" alt="Второй слайд">
+                <div class="beksun-slayda">Andromeda Galactic</div>
+            </div>
+          
+            <div class="parag">
+                <img src="https://cdn.mos.cms.futurecdn.net/4MLyNZ66GSMUp7z49Q8k3K.jpg" alt="Третий слайд">
+                <div class="beksun-slayda">Space</div>
+            </div>
+          
+            <a class="prev" onclick="minusSlide()">❮</a>
+            <a class="next" onclick="plusSlide()">❯</a>
+          </div>
+          
+          <div class="uneizmen-akemada">
+            <span class="noguma-pomoki-kadra" onclick="currentSlide(1)"></span>  
+            <span class="noguma-pomoki-kadra" onclick="currentSlide(2)"></span>  
+            <span class="noguma-pomoki-kadra" onclick="currentSlide(3)"></span>  
+          </div>
+        
+    </div>
+
+</div>
+
+
+
+
+    <div class='cook'>
+
+        <div class='container'>
+
+            <div class='cook-title'>
+                <p id="pride-text-en">OUR <span>PRIDE</span> OUR <span>PRIDE</span> OUR <span>PRIDE</span> OUR <span>PRIDE</span> </p>
+            </div>
+
+            <div class="cook-chimas">
+
+                <div class="item-chimas">
+                    <div class='cook-content'>
+                        <img src='neil.jpg'>
+                    </div>
+
+                    <div class='menu-text'>
+                        <h3>NEIL ARMSTRONG</h3>
+                        <p>first man on the moon</p>
+                    </div>
+                </div>
+
+                <div class="item-chimas">
+                    <div class='cook-content'>
+                        <img src='james-lo.jpg'>
+                    </div>
+
+                    <div class='menu-text'>
+                        <h3>JAMES LOVELL</h3>
+                        <p>was on the moon twice</p>
+                    </div>
+                </div>
+
+                <div class="item-chimas">
+                    <div class='cook-content'>
+                        <img src='sally-ride.jpg'>
+                    </div>
+
+                    <div class='menu-text'>
+                        <h3>SALLY RIDE</h3>
+                        <p>first woman in space</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+
+
+<div id="russian-content">
+  <!-- Русский контент -->
+
+<!--  -- HEADER --  -->
+<div class='header'>
+    <div class='container'>
+        <div class='header-line'>
+
+            <a href="index.html">
+                <div class='header-logo'>
+                    <img src="logo.png" alt="">
+                </div>
+            </a>
+
+            <div class='nav'> 
+                
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a class='nav-item' href="index.html">ГЛАВНАЯ</a>
+                    </button>    
+                </div>
+
+                <a class='nav-item' href="index-galary.html">ГЛАВНАЯ</a>
+                <a class='nav-item' href="index-about.html">О НАС</a>
+                <a class='nav-item' href="index-achievements.html">ДОСТИЖЕНИЯ</a>
+            </div>
+            
+            <div class='cart'>
+            </div>
+
+            <div class='phone'>
+                <div class='phone-holder'>
+                    <div class='number'><a class='num' href='#'>+380-111-11-11</a></div>
+                    
+                </div>
+
+                <div class='phone-text'>
+                    свяжитесь с нами 
+                </div>
+
+                <div class="">
+                    <div class="">
+                    </div>
+            </div>
+
+        </div>
+
+            <div class="language-button">
+                <button id="language-toggle-rus" onclick="showRussianContent()">RUS</button>
+                <button id="language-toggle-eng" onclick="showEnglishContent()">ENG</button>
+            </div>
+
+            <div class='burger-menu'>
+
+                <button id='burger' onclick="toggleMenu()">
+                    <img src="burger-img.png" alt="">
+                </button>
+
+                <div id='menu' class='burger-slide disp'>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a class='nav-item' href="index.html">ГЛАВНАЯ</a>
+                        </button>
+                      </div>
+i                    <li><a class='nav-item' href="index-galary.html">ГАЛЕРЕЯ</a></li>
+                    <li><a class='nav-item' href="index-about.html">О НАС</a></li>
+                    <li><a class='nav-item' href="index-achievements.html">ДОСТИЖЕНИЯ</a></li>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<div class='galery'>
+
+    <div class='container'>
+
+        <div class='galery-title'>
+            <p id="gallery-text-en"> ГАЛЕРЕЯ <span>ГАЛЕРЕЯ</span> ГАЛЕРЕЯ<span> ГАЛЕРЕЯ</span> </p>
+        </div>
+
+        <div class='galery-content'>
+
+            <div class='galery-left'>
+
+                <div class='galery-up'>
+                    <img class='img-gal high' src="space-10.jpg">
+                </div>
+
+                <div class='galery-down'>
+                    <img class='img-gal' src="space-20.jpg">
+                    <img class='img-gal' src="space-30.jpg">
+                </div>
+
+            </div>
+
+            <div class='galery-right'>
+
+                 <div class='galery-up'>
+                    <img class='img-gal' src="space-40.jpg">
+                    <img class='img-gal' src="space-30.jpg">
+                </div>
+
+                <div class='galery-down'>
+                    <img class='img-gal high' src="space-50.jpg">
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="adaptivn-slayder">
+            <div class="parag">
+                <img src="https://thehill.com/wp-content/uploads/sites/2/2022/08/CA_space_08032022istock.jpg" alt="Первый слайд">
+                <div class="beksun-slayda">View from Space</div>
+            </div>
+          
+            <div class="parag">
+                <img src="https://cdn.wccftech.com/wp-content/uploads/2016/09/spacee.jpg" alt="Второй слайд">
+                <div class="beksun-slayda">Andromeda Galactic</div>
+            </div>
+          
+            <div class="parag">
+                <img src="https://cdn.mos.cms.futurecdn.net/4MLyNZ66GSMUp7z49Q8k3K.jpg" alt="Третий слайд">
+                <div class="beksun-slayda">Space</div>
+            </div>
+          
+            <a class="prev" onclick="minusSlide()">❮</a>
+            <a class="next" onclick="plusSlide()">❯</a>
+          </div>
+          
+          <div class="uneizmen-akemada">
+            <span class="noguma-pomoki-kadra" onclick="currentSlide(1)"></span>  
+            <span class="noguma-pomoki-kadra" onclick="currentSlide(2)"></span>  
+            <span class="noguma-pomoki-kadra" onclick="currentSlide(3)"></span>  
+          </div>
+        
+    </div>
+
+</div>
+
+
+
+
+    <div class='cook'>
+
+        <div class='container'>
+
+            <div class='cook-title'>
+                <p id="pride-text-en">НАША <span>ГОРДОСТЬ</span> НАША <span>ГОРДОСТЬ</span> </p>
+            </div>
+
+            <div class="cook-chimas">
+
+                <div class="item-chimas">
+                    <div class='cook-content'>
+                        <img src='neil.jpg'>
+                    </div>
+
+                    <div class='menu-tex'i>
+                        <h3>Нил Армстронг</h3>
+                        <p>первый человек на луне</p>
+                    </div>
+                </div>
+
+                <div class="item-chimas">
+                    <div class='cook-content'>
+                        <img src='james-lo.jpg'>
+                    </div>
+
+                    <div class='menu-text'>
+                        <h3>Джеймс Ловелл</h3>
+                        <p>был дважды на луне</p>
+                    </div>
+                </div>
+
+                <div class="item-chimas">
+                    <div class='cook-content'>
+                        <img src='sally-ride.jpg'>
+                    </div>
+
+                    <div class='menu-text'>
+                        <h3>Салли Райд</h3>
+                        <p>первая женщина в космосе</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+
+<button class="scroll-to-top" onclick="scrollToTop()">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <path d="M14.8285 11.9481L16.2427 10.5339L12 6.29122L7.7574 10.5339L9.17161 11.9481L11 10.1196V17.6568H13V10.1196L14.8285 11.9481Z" fill="currentColor"/>
+
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7782 4.22183C15.4824 -0.0739415 8.51759 -0.0739422 4.22183 4.22183C-0.0739415 8.51759 -0.0739422 15.4824 4.22183 19.7782C8.51759 24.0739 15.4824 24.0739 19.7782 19.7782C24.0739 15.4824 24.0739 8.51759 19.7782 4.22183ZM18.364 5.63604C14.8492 2.12132 9.15076 2.12132 5.63604 5.63604C2.12132 9.15076 2.12132 14.8492 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604Z" fill="currentColor" />
+    </svg>
+</button>
+
+
+<div class='footer'>
+    KROK University 2023
+</div>
+
+
+<script src='app.js'></script>
+
+</body>
+</html>
